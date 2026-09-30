@@ -93,17 +93,13 @@ like, and [`AGENTS.md`](AGENTS.md) for the rules code is held to: the dependency
 security boundaries, the testing expectations, and the requirement that every commit is
 written with AI assistance and says which model did the work.
 
-**Contributions are open.** While the license is provisional, each one is made under both
-Apache-2.0 and the Unlicense, so the project can settle on its final license without asking
-anyone again — see [`CONTRIBUTING.md`](CONTRIBUTING.md#licensing-your-contribution). There is
-no code yet, so the most useful contributions today are to the design itself.
+**Contributions are open** under The Ooga Booga License — see
+[`CONTRIBUTING.md`](CONTRIBUTING.md#licensing-your-contribution). There is no code yet, so the
+most useful contributions today are to the design itself.
 
 Found a vulnerability? Report it privately — see [`SECURITY.md`](SECURITY.md).
 
 ## License
 
-Apache-2.0 for now — see [`LICENSE`](LICENSE). This is provisional: the project is expected
-to move to the Ooga Booga License once the team has reviewed the repository. Apache-2.0 is
-the placeholder because it carries a patent grant and a tested liability disclaimer, which is
-the safer default for software that will eventually move real money. Until the license
-settles, contributions are made under both Apache-2.0 and the Unlicense.
+[The Ooga Booga License](LICENSE), a public-domain dedication. The previous Apache-2.0 and
+Unlicense contribution policy is recorded in [decision 0007](docs/decisions/0007-ooga-booga-license.md).

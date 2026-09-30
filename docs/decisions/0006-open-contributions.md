@@ -1,7 +1,7 @@
 # 0006. Contributions open, under both Apache-2.0 and the Unlicense
 
-**Status:** accepted, 2026-09-23. Supersedes the pause on contributions in
-[0004](0004-provisional-license.md).
+**Status:** superseded by [0007](0007-ooga-booga-license.md), 2026-09-30. Superseded the pause
+on contributions in [0004](0004-provisional-license.md).
 
 ## Decision
 
