@@ -28,6 +28,7 @@ means writing a new record.
 | [0005](0005-ai-assisted-commits.md) | Every commit is written with AI assistance and names the model | accepted |
 | [0006](0006-open-contributions.md) | Contributions open, under both Apache-2.0 and the Unlicense | superseded by 0007 |
 | [0007](0007-ooga-booga-license.md) | Adopt The Ooga Booga License | accepted |
+| [0008](0008-move-to-oogaboogax.md) | The repository lives at OogaBoogaX/lightningfoundry | accepted |
 
 ## Waiting for a record
 
