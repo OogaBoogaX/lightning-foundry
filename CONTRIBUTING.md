@@ -24,8 +24,8 @@ questions, and pull requests against the docs, schemas and tests.
 Nothing to install. There is no build, no package manager, and no dependencies.
 
 ```bash
-git clone https://github.com/OogaBoogaX/lightning-foundry.git
-cd lightning-foundry
+git clone https://github.com/OogaBoogaX/lightningfoundry.git
+cd lightningfoundry
 node tests/contract.test.mjs
 ```
 

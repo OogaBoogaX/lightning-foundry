@@ -101,5 +101,7 @@ Found a vulnerability? Report it privately — see [`SECURITY.md`](SECURITY.md).
 
 ## License
 
-[The Ooga Booga License](LICENSE), a public-domain dedication. The previous Apache-2.0 and
-Unlicense contribution policy is recorded in [decision 0007](docs/decisions/0007-ooga-booga-license.md).
+[The Ooga Booga License](LICENSE), a public-domain dedication. The earlier Apache-2.0 and
+Unlicense contribution policy is recorded in
+[decision 0006](docs/decisions/0006-open-contributions.md), and the switch in
+[decision 0007](docs/decisions/0007-ooga-booga-license.md).
