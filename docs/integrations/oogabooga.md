@@ -281,5 +281,5 @@ leak, and the questions in this document want settling before a second node appe
 
 - [`obl-payments-poc.md`](obl-payments-poc.md) — OBL's payments and Lightning Factory proof of
   concept, mapped onto the milestones.
-- `../lightning-factory.md`, not yet written — the consumer's side of the contract: what the
-  Factory must do with the stream it receives.
+- [`../lightning-factory.md`](../lightning-factory.md) — the consumer's side of the contract:
+  what the Factory must do with the stream it receives, and never show.
