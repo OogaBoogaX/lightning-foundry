@@ -6,17 +6,13 @@ like.
 
 ## Licensing your contribution
 
-Foundry is Apache-2.0 for now, and the license is provisional: the team expects to move to the
-Ooga Booga License once it has reviewed the repository — see
-[decision 0004](docs/decisions/0004-provisional-license.md). Changing a license normally needs
-the consent of everyone who has contributed, so until it settles, contributions are made under
-two licenses at once.
-
-**Every contribution is licensed under both the [Apache License 2.0](LICENSE) and the
-[Unlicense](https://unlicense.org).** Apache-2.0 matches the project today and carries its
-patent grant. The Unlicense, a public-domain dedication, lets the project move to its final
-license without asking anyone again. The pull request template asks you to confirm both, and
-a contribution that cannot be offered on both terms waits until the license settles.
+Foundry uses [The Ooga Booga License](LICENSE), the same public-domain dedication as the other
+OogaBoogaX projects. By contributing, you agree to release your contribution under that
+license; the pull request template asks you to confirm this. The provisional Apache-2.0 and
+Unlicense policy for earlier contributions is recorded in
+[decision 0006](docs/decisions/0006-open-contributions.md), and the switch is recorded in
+[decision 0007](docs/decisions/0007-ooga-booga-license.md). Earlier grants remain available
+for versions released under them.
 
 This applies to everyone, maintainers included, and changes only by a later decision record.
 
@@ -28,7 +24,7 @@ questions, and pull requests against the docs, schemas and tests.
 Nothing to install. There is no build, no package manager, and no dependencies.
 
 ```bash
-git clone https://github.com/drneski/lightning-foundry.git
+git clone https://github.com/OogaBoogaX/lightning-foundry.git
 cd lightning-foundry
 node tests/contract.test.mjs
 ```

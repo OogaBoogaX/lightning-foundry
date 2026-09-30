@@ -94,10 +94,9 @@ verifies the exact model artifacts it uses. Versioned, hashed, and reproducible 
 recorded training pipeline.
 
 **Licensing of weights is an open question.** Open-source licenses were written for source
-code and map awkwardly onto model weights. Foundry is Apache-2.0 today and pending a decision;
-whatever that decision is, it needs a separate, explicit answer for weights rather than an
-assumption that the code license covers them. Recorded in [`decisions/`](decisions/) when
-settled.
+code and map awkwardly onto model weights. Foundry's code uses The Ooga Booga License, but
+weights need a separate, explicit licensing decision rather than an assumption that the code
+license covers them. Record that decision in [`decisions/`](decisions/) when settled.
 
 ## Where the AI is not
 

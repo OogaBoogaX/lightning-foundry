@@ -44,8 +44,8 @@ factory (the events a visualization is built on), education.
 ## Contributing
 
 Foundry uses fork and pull request. Branch from `main` in your own fork, open a PR against
-`drneski/lightning-foundry`, and describe what you verified. While the license is
-provisional, every contribution is made under both Apache-2.0 and the Unlicense; see
+`OogaBoogaX/lightning-foundry`, and describe what you verified. Contributions are made under
+[The Ooga Booga License](LICENSE); see
 [`CONTRIBUTING.md`](CONTRIBUTING.md#licensing-your-contribution).
 
 Changes touching security policy, limits or permissions, dependencies, wallet, macaroon or key

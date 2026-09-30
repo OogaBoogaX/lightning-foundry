@@ -1,7 +1,7 @@
 # 0004. Apache-2.0 as a placeholder license
 
-**Status:** accepted, 2026-09-23. Expected to be superseded. The pause on contributions is
-superseded by [0006](0006-open-contributions.md).
+**Status:** superseded by [0007](0007-ooga-booga-license.md), 2026-09-30. The pause on
+contributions was superseded earlier by [0006](0006-open-contributions.md).
 
 ## Decision
 
