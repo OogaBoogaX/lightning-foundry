@@ -22,7 +22,7 @@ prevents it.
 **Report privately. Do not open a public issue for a security problem.**
 
 Use GitHub's private vulnerability reporting:
-[report a vulnerability](https://github.com/drneski/lightning-foundry/security/advisories/new),
+[report a vulnerability](https://github.com/OogaBoogaX/lightningfoundry/security/advisories/new),
 or Security → Report a vulnerability on the repository page. It opens a private thread visible
 only to maintainers.
 

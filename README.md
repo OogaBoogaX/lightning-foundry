@@ -51,6 +51,7 @@ Then, roughly in this order:
 | [`docs/roadmap.md`](docs/roadmap.md) | The milestones in order, and what would make us stop |
 | [`docs/integrations/oogabooga.md`](docs/integrations/oogabooga.md) | What Ooga Booga Land's Lightning Factory may show, and what publishing rebalances costs |
 | [`docs/integrations/obl-payments-poc.md`](docs/integrations/obl-payments-poc.md) | How OBL's payments and Factory proof of concept lines up with the milestones |
+| [`docs/lightning-factory.md`](docs/lightning-factory.md) | What a consumer of the public stream must do with it, and must never show |
 | [`docs/decisions/`](docs/decisions/) | Choices that are expensive to revisit, and why they were made |
 | [`schemas/`](schemas/), [`examples/`](examples/) | The event contract as JSON Schema, and one channel's life in both streams |
 
@@ -101,5 +102,7 @@ Found a vulnerability? Report it privately — see [`SECURITY.md`](SECURITY.md).
 
 ## License
 
-[The Ooga Booga License](LICENSE), a public-domain dedication. The previous Apache-2.0 and
-Unlicense contribution policy is recorded in [decision 0007](docs/decisions/0007-ooga-booga-license.md).
+[The Ooga Booga License](LICENSE), a public-domain dedication. The earlier Apache-2.0 and
+Unlicense contribution policy is recorded in
+[decision 0006](docs/decisions/0006-open-contributions.md), and the switch in
+[decision 0007](docs/decisions/0007-ooga-booga-license.md).

@@ -26,7 +26,7 @@ Establish what a Foundry node says about itself, before building anything that s
 - Signed, push-only delivery of the public stream, exercised end to end by the simulator
   against a reference receiver
 - The consumer's side of the contract, written for Ooga Booga Land's Lightning Factory
-  (`lightning-factory.md`)
+  ([`lightning-factory.md`](lightning-factory.md))
 - Contract tests
 
 **Done when:** a consumer can build against the event stream without a Lightning node
