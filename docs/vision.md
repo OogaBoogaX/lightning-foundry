@@ -44,7 +44,9 @@ Three capabilities, in the order they get built:
 **Intelligent rebalancing.** Not "move liquidity when a threshold trips" but "is this rebalance
 worth its cost, given what this channel actually earns, how quickly it drains, and what else
 the capital could do." A rebalance that costs more than the forwards it enables is a loss
-executed efficiently.
+executed efficiently. Moving the liquidity is Lightning Jet's job; deciding whether moving it
+is worth the cost is Foundry's
+([decision 0009](decisions/0009-rebalancing-in-lightning-jet.md)).
 
 **Intelligent channel selection.** Which peers to open to, how much to commit, and — the part
 nobody automates — when to stop. Closing a mediocre channel and redeploying its capital is one
