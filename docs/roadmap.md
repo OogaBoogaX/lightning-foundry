@@ -42,7 +42,8 @@ A minimal, verifiable, installable node that **observes and touches nothing**.
 - Bitcoin Core and LND, with versions and hashes published and verified at install
 - Foundry Core emitting real events against the M1 contract, and publishing the public ones
   when the operator opts in
-- Lightning Jet integrated and operator-driven
+- Lightning Jet running standalone and operator-driven, with Foundry observing its rebalances
+  ([decision 0009](decisions/0009-rebalancing-in-lightning-jet.md))
 - Deterministic dependency and policy validation
 - A small local interface
 - A local assistant that can explain what the node is doing and change nothing
@@ -79,8 +80,11 @@ riskiest transition in the project, and burying it inside a larger one is how it
 
 - Foundry proposes; the operator approves; Foundry executes
 - Scoped LND macaroons: the component that reads is not the component that acts
+- A managed rebalancing engine, Lightning Jet or another: the operator approves Foundry's
+  targets, and Policy rules on every call the engine makes to reach them, recording the target
+  each call served
 - Deterministic limits enforced in code, not policy: daily rebalance fee ceiling, channel
-  close ceiling, reserve floor
+  close ceiling, reserve floor, how often a channel's fee may change
 - A kill switch that returns the node to operator control immediately
 - Every proposal, decision and outcome recorded against M3's accounting
 
@@ -103,8 +107,9 @@ here is the data" is more useful to the ecosystem than a model that quietly unde
 
 ### M6 — Autonomy within a mandate
 
-The full loop: peer discovery, channel allocation, fee policy, rebalancing, channel
-retirement, capital redeployment — inside a deterministic mandate the model cannot widen.
+The full loop: peer discovery, channel allocation, fee policy, rebalancing through a managed
+engine, channel retirement, capital redeployment — inside a deterministic mandate the model
+cannot widen.
 
 **Done when:** a node operates unattended within its mandate for a sustained period, its
 economic outcome is attributable rather than merely recorded, and the operator can explain

@@ -54,7 +54,9 @@ predict Foundry's automated responses can farm them — provoke a rebalance, col
 
 **Mitigation:** hard budget caps that are not policy suggestions (invariant 7). A peer that
 can trigger unlimited rebalancing has found a money pump; a daily fee ceiling turns that into
-a bounded annoyance.
+a bounded annoyance. The ceiling binds the rebalancing engine too: in managed mode Policy
+counts every fee Lightning Jet pays against it, and standalone, Jet's own limit is the only
+bound.
 
 **Open question:** automated responses are predictable by construction, and predictability is
 exploitable. Worth deliberate thought before M4, when Foundry first acts, rather than a claim
@@ -71,6 +73,10 @@ and the reason invariant 1 is first.
 reproducible builds; runtime network isolation enforced by the sandbox rather than by trusting
 the package. See the Dependency Guardian in [`invariants.md`](invariants.md), including an
 explicit statement of what it cannot guarantee.
+
+A rebalancing engine running beside the node is part of this surface even when Foundry does
+not manage it. Managed, it must meet invariant 1 like Foundry's own code; see
+[`integrations/lightning-jet.md`](integrations/lightning-jet.md).
 
 ### 4. The update channel
 
@@ -117,8 +123,9 @@ reasons.
 **Wants:** nothing. It is buggy, not hostile — which makes it the most likely adversary on
 this list to actually cost someone money.
 
-**Gets:** whatever its credentials allow. A rebalancing loop with a bad cost model can burn
-real sats indefinitely while every component behaves exactly as written.
+**Gets:** whatever its credentials allow. A rebalancing loop with a bad cost model, in
+Foundry's targets or in the engine's choices, can burn real sats indefinitely while every
+component behaves exactly as written.
 
 **Mitigation:** deterministic limits that are not advisory; read-only by default; a model can
 never grant itself authority (invariant 6); every economic decision recorded and evaluated

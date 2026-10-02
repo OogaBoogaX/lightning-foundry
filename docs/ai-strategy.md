@@ -17,13 +17,21 @@ the hardware story becomes incoherent and the safety story becomes vague.
 Neither is required for Foundry to be useful. That is deliberate: a node management system
 that only works with a GPU attached is not local-first in any meaningful sense.
 
+A third model may live outside Foundry. Lightning Jet, the rebalancing engine Foundry manages,
+can learn short-term liquidity on its own side, and it is held to the same rule as everything
+here: in managed mode every change it asks LND for waits for Policy, and standalone, Jet's own
+deterministic limits decide. See
+[`integrations/lightning-jet.md`](integrations/lightning-jet.md#models).
+
 ## Routing intelligence
 
 ### What it is for
 
 Peer classification, topology analysis, demand forecasting, channel recommendation, capital
-allocation. Concretely: which peers are worth a channel, how much liquidity a channel needs,
-when a rebalance pays for itself, when a channel should be closed and its capital redeployed.
+allocation. Concretely: which peers are worth a channel, how much liquidity a channel needs
+and what it is worth paying to get it there, when a channel should be closed and its capital
+redeployed. How to move the liquidity is the rebalancing engine's job, not Foundry's
+([decision 0009](decisions/0009-rebalancing-in-lightning-jet.md)).
 
 None of this needs a large model. It is tabular prediction over a few thousand rows with
 strong structure, which is the home ground of gradient boosting and small time-series models.
