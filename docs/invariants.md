@@ -48,6 +48,10 @@ it uses.
 **In practice:** releases publish versions, hashes and signatures. Installation verifies them
 before running anything. "Probably the right version" is a failure.
 
+On a node Foundry adopts rather than installs, it cannot vouch for the Bitcoin Core and LND it
+did not install. It checks their versions against its compatibility list, records what it
+found, and says so ([decision 0010](decisions/0010-adopt-or-install.md)).
+
 ## 5. No phone-home telemetry
 
 Operational data stays local. No vendor telemetry, no hidden reporting, no mandatory analytics.

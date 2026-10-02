@@ -40,6 +40,9 @@ schedule. It is not a gate on M1.*
 A minimal, verifiable, installable node that **observes and touches nothing**.
 
 - Bitcoin Core and LND, with versions and hashes published and verified at install
+- Or adoption onto a compatible node that already runs, its Bitcoin Core and LND versions
+  checked against a published list and recorded
+  ([decision 0010](decisions/0010-adopt-or-install.md))
 - Foundry Core emitting real events against the M1 contract, and publishing the public ones
   when the operator opts in
 - Lightning Jet running standalone and operator-driven, with Foundry observing its rebalances

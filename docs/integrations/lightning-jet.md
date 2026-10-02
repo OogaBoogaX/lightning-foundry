@@ -133,6 +133,17 @@ and Foundry observes and accounts for it as it does for Jet standalone. Foundry'
 never wait on a Jet release: its tests run the contract against a scripted stand-in engine, as
 rule 2 of [`roadmap.md`](../roadmap.md) requires.
 
+## Adoption
+
+Foundry runs on a compatible node that already exists, or installs with Bitcoin Core and LND
+([decision 0010](../decisions/0010-adopt-or-install.md)). The path this integration opens:
+
+```text
+an LND node  →  Jet, standalone  →  Foundry adopts the node  →  Jet, managed
+```
+
+The compatibility list for an adopted node includes `rpcmiddleware.enable`.
+
 ## Where the work lives
 
 - **Lightning Jet** owns the engine, its model, standalone mode, Jet 2.0, and its side of the
